@@ -1,0 +1,11 @@
+C:\Users\student\source\repos\MathQuizRes\bin\Debug\MathQuizRes.exe.config
+C:\Users\student\source\repos\MathQuizRes\bin\Debug\MathQuizRes.exe
+C:\Users\student\source\repos\MathQuizRes\bin\Debug\MathQuizRes.pdb
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.csproj.SuggestedBindingRedirects.cache
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.Form1.resources
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.Properties.Resources.resources
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.csproj.GenerateResource.cache
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.exe
+C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.pdb
