@@ -9,3 +9,14 @@ C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.csproj.GenerateR
 C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.csproj.CoreCompileInputs.cache
 C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.exe
 C:\Users\student\source\repos\MathQuizRes\obj\Debug\MathQuizRes.pdb
+D:\MDK-01-02-main\MathQuizRes\bin\Debug\MathQuizRes.exe.config
+D:\MDK-01-02-main\MathQuizRes\bin\Debug\MathQuizRes.exe
+D:\MDK-01-02-main\MathQuizRes\bin\Debug\MathQuizRes.pdb
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.csproj.AssemblyReference.cache
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.csproj.SuggestedBindingRedirects.cache
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.Form1.resources
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.Properties.Resources.resources
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.csproj.GenerateResource.cache
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.csproj.CoreCompileInputs.cache
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.exe
+D:\MDK-01-02-main\MathQuizRes\obj\Debug\MathQuizRes.pdb
