@@ -40,7 +40,6 @@
             this.man = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bmmi = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BMItext = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
@@ -48,24 +47,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.strelka = new System.Windows.Forms.TableLayoutPanel();
-            this.strel = new System.Windows.Forms.PictureBox();
-            this.shkal = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.man.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.woman.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.strelka.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.strel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shkal)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -185,19 +181,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.qqq);
             // 
-            // bmmi
-            // 
-            this.bmmi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bmmi.AutoSize = true;
-            this.bmmi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bmmi.Location = new System.Drawing.Point(3, 0);
-            this.bmmi.Name = "bmmi";
-            this.bmmi.Size = new System.Drawing.Size(37, 19);
-            this.bmmi.TabIndex = 15;
-            this.bmmi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.BMItext);
@@ -269,91 +252,70 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // strelka
-            // 
-            this.strelka.ColumnCount = 1;
-            this.strelka.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.strelka.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.strelka.Controls.Add(this.bmmi, 0, 0);
-            this.strelka.Controls.Add(this.strel, 0, 1);
-            this.strelka.Location = new System.Drawing.Point(15, 1);
-            this.strelka.Name = "strelka";
-            this.strelka.RowCount = 2;
-            this.strelka.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.strelka.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.strelka.Size = new System.Drawing.Size(43, 39);
-            this.strelka.TabIndex = 21;
-            // 
-            // strel
-            // 
-            this.strel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.strel.Image = global::BMI_Калькулятор.Properties.Resources.стрелка;
-            this.strel.Location = new System.Drawing.Point(3, 22);
-            this.strel.Name = "strel";
-            this.strel.Size = new System.Drawing.Size(37, 14);
-            this.strel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.strel.TabIndex = 20;
-            this.strel.TabStop = false;
-            this.strel.Visible = false;
-            // 
-            // shkal
-            // 
-            this.shkal.Image = global::BMI_Калькулятор.Properties.Resources.шкала;
-            this.shkal.Location = new System.Drawing.Point(492, 361);
-            this.shkal.Name = "shkal";
-            this.shkal.Size = new System.Drawing.Size(200, 13);
-            this.shkal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.shkal.TabIndex = 19;
-            this.shkal.TabStop = false;
-            this.shkal.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.strelka);
-            this.panel2.Location = new System.Drawing.Point(492, 325);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 39);
-            this.panel2.TabIndex = 22;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(463, 400);
+            this.label8.Location = new System.Drawing.Point(429, 377);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 13);
+            this.label8.Size = new System.Drawing.Size(86, 13);
             this.label8.TabIndex = 23;
-            this.label8.Text = "Недостаток веса";
-            this.label8.Visible = false;
+            this.label8.Text = "Недостаточный";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(538, 377);
+            this.label9.Location = new System.Drawing.Point(535, 377);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 13);
             this.label9.TabIndex = 24;
             this.label9.Text = "Здоровый";
-            this.label9.Visible = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(584, 400);
+            this.label10.Location = new System.Drawing.Point(625, 377);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 13);
+            this.label10.Size = new System.Drawing.Size(71, 13);
             this.label10.TabIndex = 25;
-            this.label10.Text = "Избыток веса";
-            this.label10.Visible = false;
+            this.label10.Text = "Избыточный";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(648, 377);
+            this.label11.Location = new System.Drawing.Point(720, 377);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(59, 13);
             this.label11.TabIndex = 26;
             this.label11.Text = "Ожирение";
-            this.label11.Visible = false;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(458, 325);
+            this.trackBar1.Maximum = 35;
+            this.trackBar1.Minimum = 10;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(309, 45);
+            this.trackBar1.TabIndex = 27;
+            this.trackBar1.Value = 10;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::BMI_Калькулятор.Properties.Resources.шкала;
+            this.pictureBox3.Location = new System.Drawing.Point(432, 364);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(347, 10);
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(38, 398);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 30);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Назад";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -362,12 +324,13 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.shkal);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.woman);
             this.Controls.Add(this.panel1);
@@ -384,7 +347,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI-калькулятор";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.man.ResumeLayout(false);
             this.man.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -394,11 +356,8 @@
             this.woman.ResumeLayout(false);
             this.woman.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.strelka.ResumeLayout(false);
-            this.strelka.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.strel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shkal)).EndInit();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,21 +378,19 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel man;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label bmmi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label BMItext;
         private System.Windows.Forms.Panel woman;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox shkal;
-        private System.Windows.Forms.PictureBox strel;
-        private System.Windows.Forms.TableLayoutPanel strelka;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button3;
     }
 }
 

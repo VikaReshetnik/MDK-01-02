@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Racist_simulator;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace BMI_Калькулятор
         public Form1()
         {
             InitializeComponent();
+            man.BorderStyle = BorderStyle.FixedSingle; ;
+            man.BackColor = Color.Gainsboro;
         }
         private void qqq(object sender, EventArgs e)
         {
@@ -38,47 +41,37 @@ namespace BMI_Калькулятор
             double Heights = Convert.ToDouble(height.Text);
             Heights = Heights / 100;
             double BMI = Math.Round(Weights / (Heights * Heights),1);
-            label8.Visible = true;
-
-            label9.Visible = true;
-            label10.Visible = true;
-            label11.Visible = true;
-            strel.Visible = true;
-            shkal.Visible = true;
+            if (man.BackColor == Color.Gainsboro)
+            {
+                picture.Image = Properties.Resources.male_icon;
+            }
+            else
+                picture.Image = Properties.Resources.female_icon;
             if (BMI < 18.5)
             {
-                picture.Image = Properties.Resources.bmi_underweight_icon;
+                trackBar1.Value = 10;
                 BMItext.Text = "Недовес";
-                strelka.Location = new Point(0, 0);
-                var x = strelka.Location.X + BMI;
-                strelka.Location = new Point((int)x, strelka.Location.Y);
+
             }
-            else if (BMI < 24.9)
+            else if (BMI <= 24.9)
             {
-                picture.Image = Properties.Resources.bmi_healthy_icon;
+                trackBar1.Value = 15;
                 BMItext.Text = "Здоровый";
-                strelka.Location = new Point(15, 0);
-                var x = strelka.Location.X + BMI;
-                strelka.Location = new Point((int)x, strelka.Location.Y);
+
             }
-            else if (BMI < 29.9)
+            else if (BMI <= 29.9)
             {
-                picture.Image = Properties.Resources.bmi_overweight_icon;
-                BMItext.Text = "Перевес";
-                strelka.Location = new Point(60, 0);
-                var x = strelka.Location.X + BMI;
-                strelka.Location = new Point((int)x, strelka.Location.Y);
+                trackBar1.Value = 25;
+                BMItext.Text = "Избыточный вес";
+
             }
-            else if (BMI > 30)
+            else if (BMI >= 30)
             {
-                picture.Image = Properties.Resources.bmi_obese_icon;
+                trackBar1.Value = 35;
                 BMItext.Text = "Ожирение";
-                strelka.Location = new Point(110, 0);
-                var x = strelka.Location.X + BMI;
-                strelka.Location = new Point((int)x, strelka.Location.Y);
+
             }
-            bmmi.Text = BMI.ToString();
-            bmmi.Size = picture.Size;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -91,8 +84,10 @@ namespace BMI_Калькулятор
             Application.Exit();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            Form Race = new Map();
+            Race.Show();
 
         }
     }
